@@ -1,0 +1,43 @@
+.div-container-home{
+    background-color: #1A1A1A;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.div-container-img{
+    width: 50%;
+    background-image: url('../assets/fondoHome.png');
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-container-form{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.div-form{
+    border: 1px solid #aaa;
+    border-radius: .5rem;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+
+.div-form:hover{
+    box-shadow: 0 0 10px #aaa;
+}
+
+.title-form{
+    font-size: 2rem
+}
