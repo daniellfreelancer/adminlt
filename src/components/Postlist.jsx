@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import Post from './Post'
 import { useState } from 'react'
 import axios from 'axios'
-import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import Loading from './Loading'
 
