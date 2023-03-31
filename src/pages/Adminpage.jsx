@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import '../styles/Dashboard.css'
 import Swal from 'sweetalert2';
 import { deleteCredentials } from '../features/userAPI';
+import Postlist from '../components/Postlist';
 
 export default function Adminpage() {
 
@@ -51,7 +52,7 @@ export default function Adminpage() {
     setTimeout(() => {
         goHome("/");
       localStorage.removeItem("token");
-    }, 2500);
+    }, 2000);
   };
 
 
@@ -62,7 +63,9 @@ export default function Adminpage() {
             <button onClick={()=>goHome('/')} className='btn btn-info' >Nuevo post</button>
             <button onClick={handleSignOut} className='btn btn-danger' >Cerrar sesión</button>
         </header>
-        
+        <main className='container py-5' >
+            <Postlist/>
+        </main>
     </>
   )
 }
