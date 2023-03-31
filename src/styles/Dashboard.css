@@ -1,0 +1,8 @@
+.header-dashboard{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: baseline;
+    padding: 2rem 0rem;
+    border-bottom: 1px solid #333;
+}

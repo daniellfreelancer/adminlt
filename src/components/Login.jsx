@@ -31,9 +31,9 @@ export default function Login() {
     
             } else {
               let dataResponse = res.data
-              console.log(dataResponse)
+            //   console.log(dataResponse)
               let dataSuccess = dataResponse.message
-              dispatch(setCredentials(res?.data?.response.user))
+              dispatch(setCredentials(res?.data?.response.admin))
               localStorage.setItem('token', res?.data?.response.token)
               swal.fire({
                 text: dataSuccess,
