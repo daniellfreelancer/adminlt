@@ -13,7 +13,7 @@ export default function Postlist() {
     const reloaded = useSelector((state)=> state.reload.reloadState)
 
     useEffect(() => {
-        axios.get('http://localhost:4000/news/posts')
+        axios.get('https://exuberant-pink-angelfish.cyclic.app/news/posts')
         .then((response) => {
           setFinancialPosts(response.data);
         })
