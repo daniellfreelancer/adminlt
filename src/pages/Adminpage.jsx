@@ -15,6 +15,7 @@ export default function Adminpage() {
     const userAdmin = useSelector((state)=>state.auth.user)
 
 
+
     
   const handleSignOut = (e) => {
     e.preventDefault();
@@ -60,7 +61,7 @@ export default function Adminpage() {
     <>
         <header className='header-dashboard' >
             <p> {userAdmin ? userAdmin.email.toUpperCase() : ""} </p>
-            <button onClick={()=>goHome('/')} className='btn btn-info' >Nuevo post</button>
+            <button onClick={()=>goHome('/create')} className='btn btn-info' >Nuevo post</button>
             <button onClick={handleSignOut} className='btn btn-danger' >Cerrar sesión</button>
         </header>
         <main className='container py-5' >

@@ -4,21 +4,23 @@ import { useState } from 'react'
 import axios from 'axios'
 import 'react-loading-skeleton/dist/skeleton.css'
 import Loading from './Loading'
+import { useSelector } from 'react-redux'
 
 export default function Postlist() {
 
     const [financialPosts, setFinancialPosts] = useState([])
 
+    const reloaded = useSelector((state)=> state.reload.reloadState)
+
     useEffect(() => {
-        axios.get('https://exuberant-pink-angelfish.cyclic.app/post')
+        axios.get('http://localhost:4000/news/posts')
         .then((response) => {
-          console.log(response.data);
           setFinancialPosts(response.data);
         })
         .catch((error) => {
           console.log(error);
         });
-    }, [])
+    }, [reloaded])
     
 
 

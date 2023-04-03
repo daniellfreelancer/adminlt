@@ -55,7 +55,7 @@ export default function Login() {
 
     }
   return (
-    <div className='w-75 m-5'>
+    <div className='w-100'>
       <form className='w-100 div-form p-5' onSubmit={loginAdmin} id='contact'>
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">Email</label>
@@ -67,7 +67,7 @@ export default function Login() {
           <input type="password" className="form-control" id="exampleInputPassword1"
             value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
-        <button type="submit" className="btn btn-primary">Ingresar</button>
+        <button type="submit" className="btn btn-primary w-100 mt-2">Ingresar</button>
       </form>
     </div>
   )
